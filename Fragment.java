@@ -49,8 +49,8 @@ public class Fragment {
 
                         namiesto if pouzijem ternany operator
          */
-        int absNumerator=Math.abs(numerator);
-        int absDenominator=Math.abs(denominator);
+        int absNumerator= Math.abs(numerator);
+        int absDenominator= Math.abs(denominator);
 
         int commonDivisor=absNumerator<absDenominator?absNumerator:absDenominator;
         while (absNumerator % commonDivisor !=0 || absDenominator % commonDivisor !=0) {
@@ -70,6 +70,13 @@ public class Fragment {
     public double getRealValue() {
         double doubleNumerator = (double) numerator;
         return numerator / denominator;
+    }
+
+    public MixedNumber getMixedNumber() {
+        int value = numerator/denominator; //23/10
+                Fragment f =new Fragment(numerator%denominator,denominator); //=2 3/10
+        return new MixedNumber(value,f);
+
     }
 
     public void reverse() {

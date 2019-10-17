@@ -24,5 +24,16 @@ public class Main {
         Fragment f4 = f2.copy();
 
         Fragment f5 = new Fragment(f1);
+
+        MyMath myMath = new MyMath();
+        Fragment f6 = myMath.add(f1,f2);
+        System.out.println("\n" +f6.toString());
+
+        f6 = myMath.add(f1,f2);
+        System.out.println("\n" +f6.toString());
+
+        MixedNumber m1 = new MixedNumber(4,2,7);
+        System.out.println(m1.toString());
+
     }
 }
