@@ -43,5 +43,7 @@ public class Main {
         rect.showRectangle();
         rect.setFill(true);
         rect.showRectangle();
+
+        System.out.println();
     }
 }
