@@ -6,7 +6,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Fragment f1 = new Fragment(32,48);
+        /*Fragment f1 = new Fragment(32,48);
         System.out.println(f1.toString());
         f1.changeToBasicShape();
         System.out.println(f1.toString());
@@ -34,6 +34,14 @@ public class Main {
 
         MixedNumber m1 = new MixedNumber(4,2,7);
         System.out.println(m1.toString());
+**/
+        Rectangle rect = new Rectangle(12,5);
+        System.out.println(rect.calcDiagonale());
 
+        rect.print();
+        rect.setCharacter('$');
+        rect.showRectangle();
+        rect.setFill(true);
+        rect.showRectangle();
     }
 }
