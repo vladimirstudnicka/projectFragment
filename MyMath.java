@@ -52,4 +52,35 @@ public class MyMath {
 
     }
 
+    public MixedNumber add(MixedNumber a, MixedNumber b) {
+        Fragment one = new Fragment(a.convertToFragment());
+        Fragment two = new Fragment(b.convertToFragment());
+        Fragment result = add(one,two);
+        return result.getMixedNumber();
+    }
+
+    public MixedNumber sub(MixedNumber a, MixedNumber b) {
+        Fragment one = new Fragment(a.convertToFragment());
+        Fragment two = new Fragment(b.convertToFragment());
+        Fragment result = sub(one,two);
+        return result.getMixedNumber();
+
+    }
+
+    public MixedNumber mul(MixedNumber a, MixedNumber b) {
+        Fragment one = new Fragment(a.convertToFragment());
+        Fragment two = new Fragment(b.convertToFragment());
+        Fragment result = mul(one,two);
+        return result.getMixedNumber();
+
+    }
+
+    public MixedNumber div(MixedNumber a, MixedNumber b) {
+        Fragment one = new Fragment(a.convertToFragment());
+        Fragment two = new Fragment(b.convertToFragment());
+        Fragment result = div(one,two);
+        return result.getMixedNumber();
+
+    }
+
 }
