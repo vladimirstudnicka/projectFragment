@@ -7,7 +7,7 @@ public class Bank {
 
     private String name;
 
-   /*public Bank(String name) { // prezistit a opravit
+   /*public Bank(String name) { // prezistit
         this.name = name;
     }*/
 

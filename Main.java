@@ -52,6 +52,8 @@ public class Main {
         double loan = bank.loan(20, 2, 2);
         System.out.println("Your amount of monthly installment is: " +loan);
 
+        System.out.println();
+
 
     }
 
