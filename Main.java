@@ -45,5 +45,14 @@ public class Main {
         rect.showRectangle();
 
         System.out.println();
+
+        Bank bank = new Bank();
+        bank.convert();
+        System.out.println();
+        double loan = bank.loan(20, 2, 2);
+        System.out.println("Your amount of monthly installment is: " +loan);
+
+
     }
+
 }
