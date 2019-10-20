@@ -7,11 +7,8 @@ public class Bank {
 
     private String name;
 
-   /*public Bank(String name) { // prezistit
+    public Bank(String name) { // prezistit
         this.name = name;
-    }*/
-
-    public Bank() {
     }
 
     public String getName() {
@@ -22,21 +19,20 @@ public class Bank {
         this.name = name;
     }
 
-    public double convert() {
+    public double convert(double amount, double code) {
 
-        double amount, code, forint, pound, franc, kuna, turkish;
+        double forint, pound, franc, kuna, turkish;
 
         DecimalFormat f = new DecimalFormat("##.##"); // 2 desatinne miesta
 
-        Scanner sc = new Scanner(System.in);
+        //Scanner sc = new Scanner(System.in);
 
         System.out.println("This program convert Euro to this currencies. \nChoose your option:");
         System.out.println("1:Turkish \t2:Forint \t3:Pound \n4:Franc \t5:Kuna");
-        code = sc.nextInt();
+        //code = sc.nextInt();
 
         System.out.println("Write your amount");
-        amount = sc.nextFloat();
-
+        //amount = sc.nextFloat();
 
         if (code == 1 && amount > 0) {
             turkish = amount * 6.47;
@@ -61,9 +57,10 @@ public class Bank {
 
     static double loan(double value, double interest, int months) {
         if (value > 0.00 && interest > 0.00 && months > 0) {
-            return (value * (interest / 100) + value / months);
-        }
-        else
-            return  -1;
+            return (value * (interest / 100) + value) / months;
+        } else
+            return -1;
     }
+
 }
+

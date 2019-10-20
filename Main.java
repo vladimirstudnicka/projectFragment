@@ -2,6 +2,8 @@ package sk.itsovy.studnicka.ProjectFragment;
 
 import sk.itsovy.studnicka.ProjectFragment.Fragment;
 
+import static sk.itsovy.studnicka.ProjectFragment.Bank.loan;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -46,11 +48,12 @@ public class Main {
 
         System.out.println();
 
-        Bank bank = new Bank();
-        bank.convert();
+        Bank bank = new Bank("Vlado");
+        bank.convert(2,2);
+
         System.out.println();
-        double loan = bank.loan(20, 2, 2);
-        System.out.println("Your amount of monthly installment is: " +loan);
+        
+        System.out.println(loan(1000,4.5,20));
 
         System.out.println();
 
